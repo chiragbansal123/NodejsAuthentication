@@ -1,0 +1,27 @@
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/style.css">
+<div class="container">
+    <div class="frame">
+        <div class="nav">
+            <li class="signin-active"><a class="btn">LOGIN</a></li>
+        </div>
+
+        <div ng-app ng-init="checked = false">
+            <form id="signinform" class="form" action="/user/createSession" method="POST">
+                <label for="email">Email</label><input class="form-styling" type="email" name="email" id="email"
+                    placeholder="Enter your email" required>
+                <label for="password">Password</label><input class="form-styling" id="password" type="password" name="password"
+                    placeholder="Enter your password" required>
+                <div class="btn-animate"> <a href="#" onclick="document.getElementById('signinform').submit()">Sign In</a></div>
+                <div id="forgot-password"><a href="/user/forgetpassword">Forget Password</a></div>
+            </form>
+        </div>
+        <div class="google-signin">
+            <a href="/user/auth/google">
+                Google Sign In/Sign Up
+            </a>
+            
+        </div>
+
+    </div>
+</div>

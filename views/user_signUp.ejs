@@ -1,0 +1,30 @@
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/style.css">
+<div class="container">
+    <div class="frame">
+        <div class="nav">
+            <li class="signin-active"><a class="btn">SignUp</a></li>
+        </div>
+
+        <div ng-app ng-init="checked = false">
+
+            <form id="signupform" class="form" action="/user/create" method="POST">
+                <label for="name">Name</label><input class="form-styling" type="text" name="name" placeholder="Enter your name" required>
+                <label for="Email">Email</label><input class="form-styling" type="email" name="email" placeholder="Enter your email" required>
+                <label for="Password">Password</label><input class="form-styling" type="password" name="password" placeholder="Enter your password" required>
+                <label for="cnf-password">Confirm password</label><input class="form-styling" type="password" name="confirm_password" placeholder="Confirm your password" required>
+                <div class="btn-animate"><a href="#" onclick="document.getElementById('signupform').submit()">Sign Up</a></div>
+            </form>
+            </div>
+            <div class="google-signin">
+                <a href="/user/auth/google">
+                    Google Sign In/Sign Up
+                </a> 
+            </div>
+            <div class="login-button">
+                <a href="/user/signIn">
+                    Already Have an account?Click Here
+            </a>
+            </div>
+        </div>
+    </div>

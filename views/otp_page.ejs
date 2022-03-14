@@ -1,0 +1,18 @@
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/style.css">
+<div class="container">
+    <div class="frame">
+        <div class="nav">
+            <li class="signin-active"><a class="btn">Reset Password</a></li>
+        </div>
+        <div ng-app ng-init="checked = false">
+            <form id="otppage" action="/user/checkotp" method="post">
+                <label for="otp">Otp</label><input class="form-styling" type="number" name="otp" placeholder="Enter Otp" required>
+                <label for="password">Password</label><input class="form-styling" type="password" name="password" placeholder="Enter New Password" required>
+                <label for="confirm_password">Confirm Password</label><input class="form-styling" type="password" name="confirm_password" placeholder="Confirm your New Password" required>
+                <div class="btn-animate">
+                    <a href="#" onclick="document.getElementById('otppage').submit()">Reset Password</a>                </div>
+            </form>
+            </div>
+            </div>
+            </div>
