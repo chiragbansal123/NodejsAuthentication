@@ -44,3 +44,5 @@
 [0mGET /%3CassetPath(/css/layout.css) [33m404[0m 4.438 ms - 168[0m
 [0mGET / [31m500[0m 21.533 ms - 1622[0m
 [0mGET / [32m200[0m 19.415 ms - 689[0m
+::1 - - [14/Mar/2022:10:55:00 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36"
+::1 - - [14/Mar/2022:10:55:01 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36"
