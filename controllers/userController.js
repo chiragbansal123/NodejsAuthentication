@@ -65,6 +65,7 @@ module.exports.checkemail=function(req,res){
         req.session['email']=req.body.email;
         htmlString=`<h3>Enter the otp given ${output} </h3>`
         let transporter = nodemailer.createTransport(env.smtp);
+        console.log(env.smtp);
 
         // send mail with defined transport object
         const mailOptions = {
@@ -76,7 +77,7 @@ module.exports.checkemail=function(req,res){
 
         transporter.sendMail(mailOptions, (error, info) => {
             if (error) {
-                console.log(error);
+                console.log(mailOptions,error);
                 req.flash(
                     'error',
                     'Something went wrong on our end. Please try again later.'

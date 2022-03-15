@@ -41,7 +41,7 @@ const production={
         service: 'gmail',
         host:'smtp@gmail.com',
         port:587,
-        secure:false,
+        secure:true,
         auth:{
             user:process.env.nodejsauth_gmail_user,
             pass:process.env.nodejsauth_gmail_pass
