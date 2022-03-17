@@ -57,7 +57,9 @@ Express Mongodb Passport OAuth2
 - [Chirag Bansal](https://www.github.com/chiragbansal123)
 
 
+## If there is an error while sending otp to your mail
 
-
+### https://accounts.google.com/DisplayUnlockCaptcha
+Click on Continue
 
 
