@@ -24,7 +24,7 @@ const development={
     },
     google_clientID:'213001820436-6qjo78t1nflmohtsl9lihhoc77qbcda4.apps.googleusercontent.com',
     google_clientSecret:'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',
-    google_callbackURL:"http://localhost:8000/user/auth/google/callback",
+    google_callbackURL:"https://nodejsauthenticationsystem.herokuapp.com/user/auth/google/callback",
     morgan:{
         mode:'dev',
         options:{stream: accessLogStream}
