@@ -13,7 +13,7 @@ const development={
     session_cookie_key:'blahsomething',
     db:'authenticationsystem',
     smtp:{
-        service: 'gmail',
+        service: 'Gmail',
         host:'smtp@gmail.com',
         port:587,
         secure:false,
@@ -41,7 +41,7 @@ const production={
         service: 'gmail',
         host:'smtp@gmail.com',
         port:587,
-        secure:true,
+        secure:false,
         auth:{
             user:process.env.nodejsauth_gmail_user,
             pass:process.env.nodejsauth_gmail_pass
